@@ -25,15 +25,9 @@ hs_err_pid*
 
 target
 
-.classpath
-
-.project
-
 .settings
 
 .gitignore
-
-bin
 
 .apt_generated_tests
 
