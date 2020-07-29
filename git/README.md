@@ -28,4 +28,7 @@ git pull
 
 注意：
 	push 之前 最好pull 拉取一下代码
+	
+	如果是开源项目的更新 本地拉取：
+	git pull https://github.com/likun-k/java_learn.git master
 
