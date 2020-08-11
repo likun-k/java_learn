@@ -64,7 +64,7 @@ public class Application {
 			f4.setAccessible(true);
 			f4.set(user, d);
 			Date birthday = (Date)f4.get(user);
-			System.out.println("生日是： " + birthday);
+			System.out.println("生日是： " + sdf.format(birthday));//规定格式
 						
 			System.out.println("--------------------");
 			//调用eat和sleep方法			
