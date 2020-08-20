@@ -74,11 +74,8 @@ on
 order by 
 	b.id;
 
-select 
-	admin,count(role) as role
-from 
-	(select
-	a.name as admin,r.name as role
+select
+	a.name as admin,count(r.name) as role
 from 
 	admin_role b
 join 
@@ -88,7 +85,7 @@ on
 join 
 	admin a
 on
-	b.admin_id = a.id) t
+	b.admin_id = a.id
 group by
 	admin
 order by 
@@ -96,11 +93,8 @@ order by
 limit 
 	0,1;
 
-select 
-	role,count(admin) as admin
-from 
-	(select
-	a.name as admin,r.name as role,b.id
+select
+	count(a.name) as admin,r.name as role
 from 
 	admin_role b
 join 
@@ -110,7 +104,7 @@ on
 join 
 	admin a
 on
-	b.admin_id = a.id) t
+	b.admin_id = a.id
 group by
 	role
 order by 
@@ -118,11 +112,8 @@ order by
 limit 
 	0,1;
 
-select 
-	role,count(admin) as admin
-from 
-	(select
-	a.name as admin,r.name as role,b.id
+select
+	count(a.name) as admin,r.name as role
 from 
 	admin_role b
 join 
@@ -132,7 +123,7 @@ on
 join 
 	admin a
 on
-	b.admin_id = a.id) t
+	b.admin_id = a.id
 group by
 	role;
 
