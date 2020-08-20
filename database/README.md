@@ -1,3 +1,24 @@
+## 08-20 更新
+
+3.b ‘删除id 大于 5 并且 年龄小于 18的用户’  应该用 and  不是 or
+5.c 查没有录入生日的用户 应该判断`birthday` 为空或者 null  而不是判断等于0
+进阶
+1.a 建表 密码字段不应该为int
+查表  
+1. 区分 join 、 left join、 right join 的区别  而不是完全使用join
+2. 不管写代码 还是 sql 需要学会使用注释  
+
+新需求：
+在此目录下(database/) 新建项目：jdbc_learn
+学习有关jdbc 的内容 
+将编写的sql 使用java代码运行！
+
+
+
+
+
+
+
 # 数据库 
 	以mysql 为例、 此页内容写在同级目录 basic.sql 文件中
 	
